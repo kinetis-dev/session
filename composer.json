@@ -10,16 +10,16 @@
     ],
     "require": {
         "php": "^8.4",
-        "kinetis/framework": "dev-main",
+        "kinetis/framework": "^1.5.1",
         "psr/simple-cache": "^3.0.0",
         "psr/http-message": "^2.0",
         "psr/http-server-middleware": "^1.0.2"
     },
     "require-dev": {
         "infection/infection": "^0.35.0",
-        "kinetis/cache-redis": "dev-main",
-        "kinetis/persistence": "dev-main",
-        "kinetis/redis": "dev-main",
+        "kinetis/cache-redis": "^1.2.0",
+        "kinetis/persistence": "^1.2.1",
+        "kinetis/redis": "^1.0.0",
         "phpstan/phpstan": "^2.2.8",
         "phpunit/phpunit": "^12.5.33",
         "vimeo/psalm": "^6.16.1"
@@ -44,24 +44,6 @@
             "bootstrap": "Kinetis\\Session\\PackageBootstrap"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../persistence"
-        },
-        {
-            "type": "path",
-            "url": "../cache-redis"
-        },
-        {
-            "type": "path",
-            "url": "../redis"
-        },
-        {
-            "type": "path",
-            "url": "../framework"
-        }
-    ],
     "config": {
         "sort-packages": true,
         "allow-plugins": {
